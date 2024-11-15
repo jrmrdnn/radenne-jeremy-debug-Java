@@ -8,6 +8,12 @@ import java.util.List;
 
 public class ReadSymptomDataFromFile implements ISymptomReader {
 	
+	/**
+	 * Get the list of symptoms from the file
+	 *
+	 * @author Radenne Jérémy
+	 * @return List of symptoms
+	 */
 	@Override
 	public List<String> getSymptoms() {
 		List<String> symptoms = new ArrayList<>();

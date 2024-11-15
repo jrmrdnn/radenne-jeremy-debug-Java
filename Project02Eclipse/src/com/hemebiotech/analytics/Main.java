@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         AnalyticsCounter analyticsCounter = new AnalyticsCounter();
         List<String> symptoms = analyticsCounter.getSymptoms();
-        Map<String, Integer> symptomsMap = analyticsCounter.countSymptoms(symptoms);
-        analyticsCounter.writeSymptoms(symptomsMap);
+        Map<String, Integer> countSymptoms = analyticsCounter.countSymptoms(symptoms);
+        Map<String, Integer> sortSymptoms = analyticsCounter.sortSymptoms(countSymptoms);
+        analyticsCounter.writeSymptoms(sortSymptoms);
 	}
 }
