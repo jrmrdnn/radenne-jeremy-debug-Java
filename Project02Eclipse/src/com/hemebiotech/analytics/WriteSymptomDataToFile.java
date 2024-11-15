@@ -8,6 +8,13 @@ import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
+    /**
+     * Write the symptoms and their occurrences to a file
+     * @param symptoms Map of symptoms with their occurrences
+     * @author Radenne Jérémy
+     * @version 1.0
+     * @return void
+     */
     @Override
     public void writeSymptoms(Map<String, Integer> symptoms) {
         try (BufferedWriter writer = Files.newBufferedWriter(Paths.get("Project02Eclipse/result.out"))) {
